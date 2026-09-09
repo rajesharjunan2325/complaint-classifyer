@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verizon Support Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand-mark">V</div><div><p class="eyebrow">TWITTER CUSTOMER SUPPORT</p><h1>Verizon Support Agent</h1></div><span class="status"><i></i> Offline demo</span></header>
+    <section class="intro"><div><p class="eyebrow">MESSAGE TRIAGE / GROUNDED REPLY</p><h2>Turn a customer tweet into a defensible next action.</h2><p class="lede">Classify the intent, ground a reply in historical Verizon responses, and escalate when confidence or risk calls for a human.</p></div><div class="intent-count"><strong>08</strong><span>support intents</span></div></section>
+    <section class="workspace">
+      <div class="composer panel"><div class="panel-heading"><span>01</span><h3>Customer tweet</h3></div><textarea id="inputText" placeholder="Paste a customer message...">@VerizonSupport My 5G has been painfully slow since this morning. Can you help?</textarea><div class="composer-footer"><span class="hint">Ctrl + Enter to analyze</span><button id="analyzeBtn" type="button">Analyze tweet <b>→</b></button></div></div>
+      <div id="result" class="results panel"><div class="empty-state"><span class="empty-icon">↗</span><h3>Awaiting analysis</h3><p>Your classification, evidence, reply, and routing decision will appear here.</p></div></div>
+    </section>
+    <footer><span>VERIZON / SUPPORT INTELLIGENCE</span><span>Evaluation-first prototype · No customer data leaves this page</span></footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

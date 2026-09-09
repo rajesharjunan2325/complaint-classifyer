@@ -1,0 +1,2 @@
+# The evaluator and pipeline use Python's standard library only.
+# Optional judging integrations can be added without changing the offline harness.

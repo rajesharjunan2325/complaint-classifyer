@@ -1,0 +1,9 @@
+id,intent,customer_message,agent_response
+h001,billing_payment,"Why did my bill jump this month?","We can review the charge and check whether an adjustment applies. Please DM securely."
+h002,account_access,"I cannot log in to My Verizon","We can verify the account and help reset access in a secure DM."
+h003,network_outage,"Is Verizon down in my area?","Please DM your location so we can check for a local outage."
+h004,slow_data,"My 5G data is painfully slow","Please DM your location and device model so we can check coverage."
+h005,device_activation,"My new phone will not activate","Please DM the mobile number and device model so we can check activation."
+h006,plan_change,"I want to change my unlimited plan","Please DM the mobile number and billing ZIP so we can review options."
+h007,delivery_status,"Where is my phone order?","Please DM the order number and shipping ZIP so we can check tracking."
+h008,human_support,"I need a real person to fix this","Please DM your mobile number and a short description for a specialist."
