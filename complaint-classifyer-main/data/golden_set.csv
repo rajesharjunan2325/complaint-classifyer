@@ -1,201 +1,201 @@
-id,text,intent,risk
-001,"Verizon support: unexpected bill charge, please help",billing_payment,normal
-002,"Verizon support: payment failed, please help",billing_payment,normal
-003,"Verizon support: need a refund, please help",billing_payment,normal
-004,"Verizon support: billing fee is wrong, please help",billing_payment,normal
-005,"Verizon support: charged twice, please help",billing_payment,normal
-006,"Verizon support: unexpected bill charge this month, please help",billing_payment,normal
-007,"Verizon support: payment failed again, please help",billing_payment,normal
-008,"Verizon support: need a refund for this charge, please help",billing_payment,normal
-009,"Verizon support: billing fee is wrong on my account, please help",billing_payment,normal
-010,"Verizon support: charged twice for service, please help",billing_payment,normal
-011,"Verizon support: unexpected bill charge today, please help",billing_payment,normal
-012,"Verizon support: payment failed online, please help",billing_payment,normal
-013,"Verizon support: need a refund now, please help",billing_payment,normal
-014,"Verizon support: billing fee is wrong again, please help",billing_payment,normal
-015,"Verizon support: charged twice this month, please help",billing_payment,normal
-016,"Verizon support: unexpected bill charge, can you help",billing_payment,normal
-017,"Verizon support: payment failed, can you help",billing_payment,normal
-018,"Verizon support: need a refund, can you help",billing_payment,normal
-019,"Verizon support: billing fee is wrong, can you help",billing_payment,normal
-020,"Verizon support: charged twice, can you help",billing_payment,normal
-021,"Verizon support: unexpected bill charge please fix",billing_payment,normal
-022,"Verizon support: payment failed please fix",billing_payment,normal
-023,"Verizon support: need a refund please fix",billing_payment,normal
-024,"Verizon support: billing fee is wrong please fix",billing_payment,normal
-025,"Verizon support: charged twice please fix",billing_payment,normal
-026,"Verizon support: cannot log in, please help",account_access,normal
-027,"Verizon support: password reset, please help",account_access,normal
-028,"Verizon support: account is locked, please help",account_access,normal
-029,"Verizon support: verification failed, please help",account_access,normal
-030,"Verizon support: sign in does not work, please help",account_access,normal
-031,"Verizon support: cannot log in to my account, please help",account_access,normal
-032,"Verizon support: password reset is not working, please help",account_access,normal
-033,"Verizon support: account is locked again, please help",account_access,normal
-034,"Verizon support: verification failed today, please help",account_access,normal
-035,"Verizon support: sign in does not work online, please help",account_access,normal
-036,"Verizon support: cannot log in, can you help",account_access,normal
-037,"Verizon support: password reset, can you help",account_access,normal
-038,"Verizon support: account is locked, can you help",account_access,normal
-039,"Verizon support: verification failed, can you help",account_access,normal
-040,"Verizon support: sign in does not work, can you help",account_access,normal
-041,"Verizon support: cannot log in please fix",account_access,normal
-042,"Verizon support: password reset please fix",account_access,normal
-043,"Verizon support: account is locked please fix",account_access,normal
-044,"Verizon support: verification failed please fix",account_access,normal
-045,"Verizon support: sign in does not work please fix",account_access,normal
-046,"Verizon support: cannot log in today, please help",account_access,normal
-047,"Verizon support: password reset today, please help",account_access,normal
-048,"Verizon support: account is locked today, please help",account_access,normal
-049,"Verizon support: verification failed again, please help",account_access,normal
-050,"Verizon support: sign in does not work again, please help",account_access,normal
-051,"Verizon support: service is down, please help",network_outage,normal
-052,"Verizon support: no signal, please help",network_outage,normal
-053,"Verizon support: network outage, please help",network_outage,normal
-054,"Verizon support: cannot make calls, please help",network_outage,normal
-055,"Verizon support: coverage disappeared, please help",network_outage,normal
-056,"Verizon support: service is down today, please help",network_outage,normal
-057,"Verizon support: no signal in my area, please help",network_outage,normal
-058,"Verizon support: network outage again, please help",network_outage,normal
-059,"Verizon support: cannot make calls now, please help",network_outage,normal
-060,"Verizon support: coverage disappeared today, please help",network_outage,normal
-061,"Verizon support: service is down, can you help",network_outage,normal
-062,"Verizon support: no signal, can you help",network_outage,normal
-063,"Verizon support: network outage, can you help",network_outage,normal
-064,"Verizon support: cannot make calls, can you help",network_outage,normal
-065,"Verizon support: coverage disappeared, can you help",network_outage,normal
-066,"Verizon support: service is down please fix",network_outage,normal
-067,"Verizon support: no signal please fix",network_outage,normal
-068,"Verizon support: network outage please fix",network_outage,normal
-069,"Verizon support: cannot make calls please fix",network_outage,normal
-070,"Verizon support: coverage disappeared please fix",network_outage,normal
-071,"Verizon support: service is down this morning, please help",network_outage,normal
-072,"Verizon support: no signal this morning, please help",network_outage,normal
-073,"Verizon support: network outage this morning, please help",network_outage,normal
-074,"Verizon support: cannot make calls this morning, please help",network_outage,normal
-075,"Verizon support: coverage disappeared this morning, please help",network_outage,normal
-076,"Verizon support: data is slow, please help",slow_data,normal
-077,"Verizon support: 5G is buffering, please help",slow_data,normal
-078,"Verizon support: internet speed is bad, please help",slow_data,normal
-079,"Verizon support: mobile data stopped, please help",slow_data,normal
-080,"Verizon support: slow connection, please help",slow_data,normal
-081,"Verizon support: data is slow today, please help",slow_data,normal
-082,"Verizon support: 5G is buffering again, please help",slow_data,normal
-083,"Verizon support: internet speed is bad today, please help",slow_data,normal
-084,"Verizon support: mobile data stopped working, please help",slow_data,normal
-085,"Verizon support: slow connection again, please help",slow_data,normal
-086,"Verizon support: data is slow, can you help",slow_data,normal
-087,"Verizon support: 5G is buffering, can you help",slow_data,normal
-088,"Verizon support: internet speed is bad, can you help",slow_data,normal
-089,"Verizon support: mobile data stopped, can you help",slow_data,normal
-090,"Verizon support: slow connection, can you help",slow_data,normal
-091,"Verizon support: data is slow please fix",slow_data,normal
-092,"Verizon support: 5G is buffering please fix",slow_data,normal
-093,"Verizon support: internet speed is bad please fix",slow_data,normal
-094,"Verizon support: mobile data stopped please fix",slow_data,normal
-095,"Verizon support: slow connection please fix",slow_data,normal
-096,"Verizon support: data is slow at home, please help",slow_data,normal
-097,"Verizon support: 5G is buffering at home, please help",slow_data,normal
-098,"Verizon support: internet speed is bad at home, please help",slow_data,normal
-099,"Verizon support: mobile data stopped at home, please help",slow_data,normal
-100,"Verizon support: slow connection at home, please help",slow_data,normal
-101,"Verizon support: activate my phone, please help",device_activation,normal
-102,"Verizon support: eSIM will not work, please help",device_activation,normal
-103,"Verizon support: SIM activation failed, please help",device_activation,normal
-104,"Verizon support: new device setup, please help",device_activation,normal
-105,"Verizon support: phone activation help, please help",device_activation,normal
-106,"Verizon support: activate my new phone, please help",device_activation,normal
-107,"Verizon support: eSIM will not work today, please help",device_activation,normal
-108,"Verizon support: SIM activation failed again, please help",device_activation,normal
-109,"Verizon support: new device setup help, please help",device_activation,normal
-110,"Verizon support: phone activation help today, please help",device_activation,normal
-111,"Verizon support: activate my phone, can you help",device_activation,normal
-112,"Verizon support: eSIM will not work, can you help",device_activation,normal
-113,"Verizon support: SIM activation failed, can you help",device_activation,normal
-114,"Verizon support: new device setup, can you help",device_activation,normal
-115,"Verizon support: phone activation help, can you help",device_activation,normal
-116,"Verizon support: activate my phone please fix",device_activation,normal
-117,"Verizon support: eSIM will not work please fix",device_activation,normal
-118,"Verizon support: SIM activation failed please fix",device_activation,normal
-119,"Verizon support: new device setup please fix",device_activation,normal
-120,"Verizon support: phone activation help please fix",device_activation,normal
-121,"Verizon support: activate my phone now, please help",device_activation,normal
-122,"Verizon support: eSIM will not work now, please help",device_activation,normal
-123,"Verizon support: SIM activation failed now, please help",device_activation,normal
-124,"Verizon support: new device setup now, please help",device_activation,normal
-125,"Verizon support: phone activation help now, please help",device_activation,normal
-126,"Verizon support: upgrade my plan, please help",plan_change,normal
-127,"Verizon support: downgrade my plan, please help",plan_change,normal
-128,"Verizon support: add a line, please help",plan_change,normal
-129,"Verizon support: cancel my plan, please help",plan_change,normal
-130,"Verizon support: compare unlimited plans, please help",plan_change,normal
-131,"Verizon support: upgrade my plan today, please help",plan_change,normal
-132,"Verizon support: downgrade my plan today, please help",plan_change,normal
-133,"Verizon support: add a line today, please help",plan_change,normal
-134,"Verizon support: cancel my plan today, please help",plan_change,normal
-135,"Verizon support: compare unlimited plans today, please help",plan_change,normal
-136,"Verizon support: upgrade my plan, can you help",plan_change,normal
-137,"Verizon support: downgrade my plan, can you help",plan_change,normal
-138,"Verizon support: add a line, can you help",plan_change,normal
-139,"Verizon support: cancel my plan, can you help",plan_change,normal
-140,"Verizon support: compare unlimited plans, can you help",plan_change,normal
-141,"Verizon support: upgrade my plan please fix",plan_change,normal
-142,"Verizon support: downgrade my plan please fix",plan_change,normal
-143,"Verizon support: add a line please fix",plan_change,normal
-144,"Verizon support: cancel my plan please fix",plan_change,normal
-145,"Verizon support: compare unlimited plans please fix",plan_change,normal
-146,"Verizon support: upgrade my plan next month, please help",plan_change,normal
-147,"Verizon support: downgrade my plan next month, please help",plan_change,normal
-148,"Verizon support: add a line next month, please help",plan_change,normal
-149,"Verizon support: cancel my plan next month, please help",plan_change,normal
-150,"Verizon support: compare unlimited plans next month, please help",plan_change,normal
-151,"Verizon support: where is my order, please help",delivery_status,normal
-152,"Verizon support: track my shipment, please help",delivery_status,normal
-153,"Verizon support: delivery is late, please help",delivery_status,normal
-154,"Verizon support: package has not arrived, please help",delivery_status,normal
-155,"Verizon support: shipping update, please help",delivery_status,normal
-156,"Verizon support: where is my order today, please help",delivery_status,normal
-157,"Verizon support: track my shipment today, please help",delivery_status,normal
-158,"Verizon support: delivery is late today, please help",delivery_status,normal
-159,"Verizon support: package has not arrived today, please help",delivery_status,normal
-160,"Verizon support: shipping update today, please help",delivery_status,normal
-161,"Verizon support: where is my order, can you help",delivery_status,normal
-162,"Verizon support: track my shipment, can you help",delivery_status,normal
-163,"Verizon support: delivery is late, can you help",delivery_status,normal
-164,"Verizon support: package has not arrived, can you help",delivery_status,normal
-165,"Verizon support: shipping update, can you help",delivery_status,normal
-166,"Verizon support: where is my order please fix",delivery_status,normal
-167,"Verizon support: track my shipment please fix",delivery_status,normal
-168,"Verizon support: delivery is late please fix",delivery_status,normal
-169,"Verizon support: package has not arrived please fix",delivery_status,normal
-170,"Verizon support: shipping update please fix",delivery_status,normal
-171,"Verizon support: where is my order this week, please help",delivery_status,normal
-172,"Verizon support: track my shipment this week, please help",delivery_status,normal
-173,"Verizon support: delivery is late this week, please help",delivery_status,normal
-174,"Verizon support: package has not arrived this week, please help",delivery_status,normal
-175,"Verizon support: shipping update this week, please help",delivery_status,normal
-176,"Verizon support: I need a human, please help",human_support,normal
-177,"Verizon support: please connect an agent, please help",human_support,normal
-178,"Verizon support: I need support, please help",human_support,normal
-179,"Verizon support: this is a complaint, please help",human_support,normal
-180,"Verizon support: send me a DM, please help",human_support,normal
-181,"Verizon support: I need a human now, please help",human_support,normal
-182,"Verizon support: please connect an agent now, please help",human_support,normal
-183,"Verizon support: I need support now, please help",human_support,normal
-184,"Verizon support: this is a complaint now, please help",human_support,normal
-185,"Verizon support: send me a DM now, please help",human_support,normal
-186,"Verizon support: I need a human, can you help",human_support,normal
-187,"Verizon support: please connect an agent, can you help",human_support,normal
-188,"Verizon support: I need support, can you help",human_support,normal
-189,"Verizon support: this is a complaint, can you help",human_support,normal
-190,"Verizon support: send me a DM, can you help",human_support,normal
-191,"Verizon support: I need a human please fix",human_support,normal
-192,"Verizon support: please connect an agent please fix",human_support,normal
-193,"Verizon support: I need support please fix",human_support,normal
-194,"Verizon support: this is a complaint please fix",human_support,normal
-195,"Verizon support: send me a DM please fix",human_support,normal
-196,"Verizon support: I need a human urgently",human_support,urgent
-197,"Verizon support: please connect an agent urgently",human_support,urgent
-198,"Verizon support: I need support urgently",human_support,urgent
-199,"Verizon support: this is a complaint and legal issue",human_support,urgent
-200,"Verizon support: send me a DM about fraud",human_support,urgent
+tweet_id,customer_text,gold_intent,gold_response_quality,gold_escalation_decision,notes
+t001,@VerizonSupport I cannot log in to my Verizon account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t002,@VerizonSupport My password reset email never arrives,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t003,@VerizonSupport My account is locked after multiple tries,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t004,@VerizonSupport The app keeps signing me out,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t005,@VerizonSupport I need help getting back into my account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t006,@VerizonSupport I cannot log in to my Verizon account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t007,@VerizonSupport My password reset email never arrives,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t008,@VerizonSupport My account is locked after multiple tries,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t009,@VerizonSupport The app keeps signing me out,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t010,@VerizonSupport I need help getting back into my account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t011,@VerizonSupport I cannot log in to my Verizon account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t012,@VerizonSupport My password reset email never arrives,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t013,@VerizonSupport My account is locked after multiple tries,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t014,@VerizonSupport The app keeps signing me out,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t015,@VerizonSupport I need help getting back into my account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t016,@VerizonSupport I cannot log in to my Verizon account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t017,@VerizonSupport My password reset email never arrives,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t018,@VerizonSupport My account is locked after multiple tries,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t019,@VerizonSupport The app keeps signing me out,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t020,@VerizonSupport I need help getting back into my account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t021,@VerizonSupport I cannot log in to my Verizon account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t022,@VerizonSupport My password reset email never arrives,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t023,@VerizonSupport My account is locked after multiple tries,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t024,@VerizonSupport The app keeps signing me out,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t025,@VerizonSupport I need help getting back into my account,account_access,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t026,@VerizonSupport Why was my bill higher than usual,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t027,@VerizonSupport I was charged twice this month,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t028,@VerizonSupport There is a refund not showing on my bill,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t029,@VerizonSupport My payment failed but I was charged,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t030,@VerizonSupport I need help with a billing error,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t031,@VerizonSupport Why was my bill higher than usual,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t032,@VerizonSupport I was charged twice this month,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t033,@VerizonSupport There is a refund not showing on my bill,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t034,@VerizonSupport My payment failed but I was charged,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t035,@VerizonSupport I need help with a billing error,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t036,@VerizonSupport Why was my bill higher than usual,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t037,@VerizonSupport I was charged twice this month,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t038,@VerizonSupport There is a refund not showing on my bill,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t039,@VerizonSupport My payment failed but I was charged,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t040,@VerizonSupport I need help with a billing error,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t041,@VerizonSupport Why was my bill higher than usual,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t042,@VerizonSupport I was charged twice this month,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t043,@VerizonSupport There is a refund not showing on my bill,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t044,@VerizonSupport My payment failed but I was charged,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t045,@VerizonSupport I need help with a billing error,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t046,@VerizonSupport Why was my bill higher than usual,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t047,@VerizonSupport I was charged twice this month,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t048,@VerizonSupport There is a refund not showing on my bill,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t049,@VerizonSupport My payment failed but I was charged,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t050,@VerizonSupport I need help with a billing error,billing_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t051,@VerizonSupport My new phone will not activate,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t052,@VerizonSupport The eSIM setup failed,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t053,@VerizonSupport SIM activation keeps failing on my device,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t054,@VerizonSupport My replacement phone is not activating,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t055,@VerizonSupport I cannot finish activating my new line,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t056,@VerizonSupport My new phone will not activate,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t057,@VerizonSupport The eSIM setup failed,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t058,@VerizonSupport SIM activation keeps failing on my device,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t059,@VerizonSupport My replacement phone is not activating,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t060,@VerizonSupport I cannot finish activating my new line,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t061,@VerizonSupport My new phone will not activate,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t062,@VerizonSupport The eSIM setup failed,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t063,@VerizonSupport SIM activation keeps failing on my device,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t064,@VerizonSupport My replacement phone is not activating,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t065,@VerizonSupport I cannot finish activating my new line,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t066,@VerizonSupport My new phone will not activate,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t067,@VerizonSupport The eSIM setup failed,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t068,@VerizonSupport SIM activation keeps failing on my device,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t069,@VerizonSupport My replacement phone is not activating,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t070,@VerizonSupport I cannot finish activating my new line,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t071,@VerizonSupport My new phone will not activate,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t072,@VerizonSupport The eSIM setup failed,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t073,@VerizonSupport SIM activation keeps failing on my device,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t074,@VerizonSupport My replacement phone is not activating,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t075,@VerizonSupport I cannot finish activating my new line,device_activation,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t076,@VerizonSupport Where is my phone order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t077,@VerizonSupport My shipment is late and tracking is stale,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t078,@VerizonSupport My package has not arrived,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t079,@VerizonSupport I need a delivery update for my order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t080,@VerizonSupport My phone order seems stuck in transit,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t081,@VerizonSupport Where is my phone order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t082,@VerizonSupport My shipment is late and tracking is stale,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t083,@VerizonSupport My package has not arrived,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t084,@VerizonSupport I need a delivery update for my order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t085,@VerizonSupport My phone order seems stuck in transit,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t086,@VerizonSupport Where is my phone order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t087,@VerizonSupport My shipment is late and tracking is stale,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t088,@VerizonSupport My package has not arrived,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t089,@VerizonSupport I need a delivery update for my order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t090,@VerizonSupport My phone order seems stuck in transit,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t091,@VerizonSupport Where is my phone order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t092,@VerizonSupport My shipment is late and tracking is stale,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t093,@VerizonSupport My package has not arrived,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t094,@VerizonSupport I need a delivery update for my order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t095,@VerizonSupport My phone order seems stuck in transit,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t096,@VerizonSupport Where is my phone order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t097,@VerizonSupport My shipment is late and tracking is stale,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t098,@VerizonSupport My package has not arrived,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t099,@VerizonSupport I need a delivery update for my order,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t100,@VerizonSupport My phone order seems stuck in transit,delivery_issue,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t101,@VerizonSupport Verizon service is down in my area,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t102,@VerizonSupport My calls keep dropping,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t103,@VerizonSupport No signal in my neighborhood today,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t104,@VerizonSupport The network has been down all evening,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t105,@VerizonSupport I have no service and no internet,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t106,@VerizonSupport Verizon service is down in my area,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t107,@VerizonSupport My calls keep dropping,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t108,@VerizonSupport No signal in my neighborhood today,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t109,@VerizonSupport The network has been down all evening,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t110,@VerizonSupport I have no service and no internet,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t111,@VerizonSupport Verizon service is down in my area,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t112,@VerizonSupport My calls keep dropping,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t113,@VerizonSupport No signal in my neighborhood today,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t114,@VerizonSupport The network has been down all evening,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t115,@VerizonSupport I have no service and no internet,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t116,@VerizonSupport Verizon service is down in my area,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t117,@VerizonSupport My calls keep dropping,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t118,@VerizonSupport No signal in my neighborhood today,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t119,@VerizonSupport The network has been down all evening,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t120,@VerizonSupport I have no service and no internet,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t121,@VerizonSupport Verizon service is down in my area,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t122,@VerizonSupport My calls keep dropping,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t123,@VerizonSupport No signal in my neighborhood today,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t124,@VerizonSupport The network has been down all evening,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t125,@VerizonSupport I have no service and no internet,network_outage,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t126,@VerizonSupport I want to change to a cheaper plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t127,@VerizonSupport Can I add a line to my account,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t128,@VerizonSupport I need to upgrade my mobile plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t129,@VerizonSupport How do I cancel my plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t130,@VerizonSupport Please help me switch plans,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t131,@VerizonSupport I want to change to a cheaper plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t132,@VerizonSupport Can I add a line to my account,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t133,@VerizonSupport I need to upgrade my mobile plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t134,@VerizonSupport How do I cancel my plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t135,@VerizonSupport Please help me switch plans,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t136,@VerizonSupport I want to change to a cheaper plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t137,@VerizonSupport Can I add a line to my account,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t138,@VerizonSupport I need to upgrade my mobile plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t139,@VerizonSupport How do I cancel my plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t140,@VerizonSupport Please help me switch plans,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t141,@VerizonSupport I want to change to a cheaper plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t142,@VerizonSupport Can I add a line to my account,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t143,@VerizonSupport I need to upgrade my mobile plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t144,@VerizonSupport How do I cancel my plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t145,@VerizonSupport Please help me switch plans,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t146,@VerizonSupport I want to change to a cheaper plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t147,@VerizonSupport Can I add a line to my account,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t148,@VerizonSupport I need to upgrade my mobile plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t149,@VerizonSupport How do I cancel my plan,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t150,@VerizonSupport Please help me switch plans,plan_change,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t151,@VerizonSupport My 5G is painfully slow today,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t152,@VerizonSupport The internet has been buffering all morning,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t153,@VerizonSupport My hotspot speeds are unusably slow,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t154,@VerizonSupport Data service is crawling in my area,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t155,@VerizonSupport My connection keeps dropping while streaming,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t156,@VerizonSupport My 5G is painfully slow today,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t157,@VerizonSupport The internet has been buffering all morning,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t158,@VerizonSupport My hotspot speeds are unusably slow,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t159,@VerizonSupport Data service is crawling in my area,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t160,@VerizonSupport My connection keeps dropping while streaming,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t161,@VerizonSupport My 5G is painfully slow today,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t162,@VerizonSupport The internet has been buffering all morning,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t163,@VerizonSupport My hotspot speeds are unusably slow,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t164,@VerizonSupport Data service is crawling in my area,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t165,@VerizonSupport My connection keeps dropping while streaming,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t166,@VerizonSupport My 5G is painfully slow today,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t167,@VerizonSupport The internet has been buffering all morning,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t168,@VerizonSupport My hotspot speeds are unusably slow,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t169,@VerizonSupport Data service is crawling in my area,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t170,@VerizonSupport My connection keeps dropping while streaming,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t171,@VerizonSupport My 5G is painfully slow today,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t172,@VerizonSupport The internet has been buffering all morning,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t173,@VerizonSupport My hotspot speeds are unusably slow,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t174,@VerizonSupport Data service is crawling in my area,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t175,@VerizonSupport My connection keeps dropping while streaming,slow_data,good,auto_handle,Seed-generated evaluation example for the Verizon support task.
+t176,@VerizonSupport I need a human to review this,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t177,@VerizonSupport Please connect me with a specialist,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t178,@VerizonSupport This issue needs a real agent,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t179,@VerizonSupport Can you send me a secure DM,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t180,"@VerizonSupport I need help from a person, not the app",human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t181,@VerizonSupport I need a human to review this,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t182,@VerizonSupport Please connect me with a specialist,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t183,@VerizonSupport This issue needs a real agent,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t184,@VerizonSupport Can you send me a secure DM,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t185,"@VerizonSupport I need help from a person, not the app",human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t186,@VerizonSupport I need a human to review this,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t187,@VerizonSupport Please connect me with a specialist,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t188,@VerizonSupport This issue needs a real agent,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t189,@VerizonSupport Can you send me a secure DM,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t190,"@VerizonSupport I need help from a person, not the app",human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t191,@VerizonSupport I need a human to review this,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t192,@VerizonSupport Please connect me with a specialist,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t193,@VerizonSupport This issue needs a real agent,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t194,@VerizonSupport Can you send me a secure DM,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t195,"@VerizonSupport I need help from a person, not the app",human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t196,@VerizonSupport I need a human to review this,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t197,@VerizonSupport Please connect me with a specialist,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t198,@VerizonSupport This issue needs a real agent,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t199,@VerizonSupport Can you send me a secure DM,human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.
+t200,"@VerizonSupport I need help from a person, not the app",human_support,needs_human,escalate,Seed-generated evaluation example for the Verizon support task.

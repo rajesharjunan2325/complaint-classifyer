@@ -1,14 +1,32 @@
-"""Risk and confidence policy for deciding auto-handle vs human review."""
+"""Auto-handle versus escalation policy for the support agent."""
+from __future__ import annotations
 
-def decide(classification, text):
+RISK_TERMS = {"fraud", "stolen", "scam", "lawsuit", "legal", "safety", "threat", "death", "harassment"}
+
+
+def decide(classification, text, retrieval=None):
     lowered = text.lower()
-    risk_terms = {"fraud", "stolen", "scam", "lawsuit", "legal", "safety", "threat", "death"}
     reasons = []
-    if classification["confidence"] < 0.62:
-        reasons.append("low classifier confidence")
-    if classification["urgent"] or any(term in lowered for term in risk_terms):
-        reasons.append("urgent or high-risk language")
-    if classification["intent"] == "human_support":
-        reasons.append("request is better handled by a specialist")
+    confidence = float(classification.get("confidence", 0.0))
+    retrieval_score = 0.0
+    if retrieval:
+        retrieval_score = float(sum(item.get("similarity", 0.0) for item in retrieval) / len(retrieval))
+
+    if confidence < 0.68:
+        reasons.append("intent confidence is below the calibrated auto-handle threshold")
+    if retrieval_score < 0.18 and retrieval is not None:
+        reasons.append("retrieval does not have enough supporting historical similarity")
+    if classification.get("urgent") or any(term in lowered for term in RISK_TERMS):
+        reasons.append("high-risk or urgent language requires human review")
+    if classification.get("intent") == "human_support":
+        reasons.append("the user explicitly asks for a specialist or secure handoff")
+
     action = "escalate" if reasons else "auto-handle"
-    return {"action": action, "reasons": reasons or ["confidence and risk checks passed"]}
+    reason_text = reasons or ["confidence, retrieval, and risk checks all passed"]
+    return {
+        "action": action,
+        "reasons": reason_text,
+        "confidence_threshold": 0.68,
+        "retrieval_similarity_threshold": 0.18,
+        "retrieval_similarity": round(retrieval_score, 3),
+    }

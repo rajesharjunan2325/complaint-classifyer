@@ -1,21 +1,39 @@
-# Twitter Customer Support AI Agent
+# Verizon Support Agent Report
 
-## Scope
+## Brand and dataset
+The project focuses on Verizon support conversations in the Customer Support on Twitter dataset. Verizon was selected because it has a consistent set of recurring issues, strong social support language, and enough historical support examples to support retrieval-based grounding.
 
-Brand: **Verizon**. Channel: public Twitter/X customer support. The system classifies eight intents, retrieves similar historical responses, drafts a safe reply, and chooses auto-handle or escalation.
+## Intent taxonomy
+The system targets these intents:
 
-## Evaluation contract
+- account_access
+- billing_issue
+- device_activation
+- delivery_issue
+- network_outage
+- plan_change
+- slow_data
+- human_support
 
-The golden set contains 200 labeled examples: 25 per intent. Run `python data/generate_golden_set.py` to reproduce it, then `python evaluation/run_evaluation.py` to write `evaluation/results.json`.
+## Pipeline
+The model pipeline performs preprocessing, intent classification, confidence scoring, historical retrieval, grounded reply generation, and escalation.
 
-Metrics include accuracy, macro-F1, trivial-majority and keyword baselines, reply rubric score, auto-handle/escalation counts, and Cohen's kappa on a 20-example human-vs-judge subset.
+## Evaluation status
+The repository includes scripts to generate the golden set and calculate evaluation metrics. The results are written to evaluation/results.json after running the evaluation script.
 
-## Known failure categories
+## What is misleading about my headline number?
+### What is misleading about my headline number?
+A headline number can be misleading because a single metric hides class imbalance, retrieval weakness, limited labeled examples, and poor calibration. Real support tasks also require trustworthy escalation decisions and grounded replies, not just a good accuracy score.
 
-1. Overlapping language: "my phone is slow" may mean device or data.
-2. Ambiguous or underspecified: "help, nothing works" lacks a routeable intent.
-3. High-risk language: fraud, legal, safety, and threats require human review.
-4. Missing historical evidence: novel requests fall back to the closest example.
-5. Unsafe personal-data request: replies must move identity checks into a secure DM.
+## One-week next steps
+1. Improve the difficult overlap classes
+2. Improve retrieval quality
+3. Calibrate escalation thresholds
+4. Strengthen response grounding
+5. Expand evaluation data and human review
 
-The current offline judge is a deterministic rubric proxy, intentionally labeled as such. It is not presented as a claim about a hosted LLM's quality.
+## Failure analysis summary
+The main failure modes are overlapping support intents, underspecified language, missing historical evidence, unsafe public data requests, and high-risk or urgent content that should be routed to a person.
+
+## Decision log
+The full engineering decision log is available in report/decision_log.md.

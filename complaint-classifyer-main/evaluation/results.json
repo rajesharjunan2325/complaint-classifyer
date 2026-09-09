@@ -1,0 +1,161 @@
+{
+  "dataset": {
+    "name": "Verizon Twitter support golden set",
+    "examples": 200,
+    "intents": [
+      "account_access",
+      "billing_issue",
+      "delivery_issue",
+      "device_activation",
+      "human_support",
+      "network_outage",
+      "plan_change",
+      "slow_data"
+    ]
+  },
+  "classifier": {
+    "accuracy": 0.95,
+    "macro_f1": 0.949,
+    "baseline_majority_accuracy": 0.125,
+    "baseline_keyword_accuracy": 0.95,
+    "per_class_f1": {
+      "account_access": {
+        "precision": 0.833,
+        "recall": 1.0,
+        "f1": 0.909
+      },
+      "billing_issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "device_activation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "delivery_issue": {
+        "precision": 0.833,
+        "recall": 1.0,
+        "f1": 0.909
+      },
+      "network_outage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "plan_change": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "slow_data": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      },
+      "human_support": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      }
+    }
+  },
+  "retrieval": {
+    "mean_recall_at_3": 0.7,
+    "recall_at_3_examples": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "reply_quality": {
+    "mean_rubric_score": 0.963,
+    "rubric": [
+      "relevant",
+      "safe",
+      "actionable",
+      "empathetic"
+    ]
+  },
+  "escalation": {
+    "accuracy": 0.125,
+    "auto_handle": 0,
+    "escalate": 200
+  },
+  "human_vs_judge": {
+    "subset": 20,
+    "percentage_agreement": 0.95,
+    "cohens_kappa": 0.857
+  },
+  "failure_analysis": {
+    "categories": {
+      "ambiguous or underspecified": [
+        {
+          "customer_text": "@VerizonSupport The internet has been buffering all morning",
+          "expected": "slow_data",
+          "predicted": "delivery_issue"
+        },
+        {
+          "customer_text": "@VerizonSupport The internet has been buffering all morning",
+          "expected": "slow_data",
+          "predicted": "delivery_issue"
+        },
+        {
+          "customer_text": "@VerizonSupport The internet has been buffering all morning",
+          "expected": "slow_data",
+          "predicted": "delivery_issue"
+        },
+        {
+          "customer_text": "@VerizonSupport The internet has been buffering all morning",
+          "expected": "slow_data",
+          "predicted": "delivery_issue"
+        },
+        {
+          "customer_text": "@VerizonSupport The internet has been buffering all morning",
+          "expected": "slow_data",
+          "predicted": "delivery_issue"
+        },
+        {
+          "customer_text": "@VerizonSupport I need help from a person, not the app",
+          "expected": "human_support",
+          "predicted": "account_access"
+        },
+        {
+          "customer_text": "@VerizonSupport I need help from a person, not the app",
+          "expected": "human_support",
+          "predicted": "account_access"
+        },
+        {
+          "customer_text": "@VerizonSupport I need help from a person, not the app",
+          "expected": "human_support",
+          "predicted": "account_access"
+        },
+        {
+          "customer_text": "@VerizonSupport I need help from a person, not the app",
+          "expected": "human_support",
+          "predicted": "account_access"
+        },
+        {
+          "customer_text": "@VerizonSupport I need help from a person, not the app",
+          "expected": "human_support",
+          "predicted": "account_access"
+        }
+      ]
+    },
+    "required_categories": [
+      "overlapping language",
+      "ambiguous or underspecified",
+      "high-risk language",
+      "missing historical evidence",
+      "unsafe personal-data request"
+    ]
+  }
+}
