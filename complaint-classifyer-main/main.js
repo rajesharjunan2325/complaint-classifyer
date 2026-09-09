@@ -10,9 +10,14 @@ const INTENTS = {
 };
 
 const LABELS = {
-  billing_payment: 'Billing & payment', account_access: 'Account access', network_outage: 'Network outage',
-  slow_data: 'Slow data', device_activation: 'Device activation', plan_change: 'Plan change',
-  delivery_status: 'Order & delivery', human_support: 'Human support'
+  billing_payment: 'Billing & payment',
+  account_access: 'Account access',
+  network_outage: 'Network outage',
+  slow_data: 'Slow data',
+  device_activation: 'Device activation',
+  plan_change: 'Plan change',
+  delivery_status: 'Order & delivery',
+  human_support: 'Human support'
 };
 
 const REPLIES = {
@@ -26,26 +31,117 @@ const REPLIES = {
   human_support: 'I am sorry this has been frustrating. Please DM your mobile number and a short description of what happened so a specialist can review it securely.'
 };
 
+const analysisCache = new Map();
+const riskPatterns = /(urgent|asap|emergency|fraud|stolen|scam|lawsuit|legal|safety)/i;
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function normalizeText(text) {
+  return text.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function findMatches(lowerText, words) {
+  const matches = [];
+
+  for (const word of words) {
+    const token = word.trim().toLowerCase();
+    if (!token) continue;
+
+    const pattern = new RegExp(`\\b${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+    if (pattern.test(lowerText)) {
+      matches.push(token);
+    }
+  }
+
+  return matches;
+}
+
 function analyzeTweet(text) {
-  const lowerText = text.toLowerCase();
-  const scores = Object.fromEntries(Object.entries(INTENTS).map(([intent, words]) => [intent, words.reduce((score, word) => score + (lowerText.includes(word) ? 1 : 0), 0)]));
+  const normalized = normalizeText(text);
+  const cacheKey = normalized || '__empty__';
+
+  if (analysisCache.has(cacheKey)) {
+    return analysisCache.get(cacheKey);
+  }
+
+  const scores = {};
+  let topIntent = 'human_support';
+  let topScore = 0;
+  let topMatches = [];
+
+  for (const [intent, words] of Object.entries(INTENTS)) {
+    const matches = findMatches(normalized, words);
+    const score = matches.length;
+    scores[intent] = score;
+
+    if (score > topScore) {
+      topIntent = intent;
+      topScore = score;
+      topMatches = matches;
+    }
+  }
+
   const ranked = Object.entries(scores).sort((a, b) => b[1] - a[1]);
-  const [intent, score] = ranked[0];
-  const confidence = Math.min(0.98, score ? 0.42 + score * 0.08 + (score - (ranked[1]?.[1] || 0)) * 0.06 : 0.18);
-  const urgent = /urgent|asap|emergency|fraud|stolen|scam|lawsuit|legal|safety/.test(lowerText);
+  const intent = topScore ? topIntent : 'human_support';
+  const runnerUp = ranked[1]?.[1] || 0;
+  const confidence = Math.min(0.98, topScore ? 0.42 + topScore * 0.08 + (topScore - runnerUp) * 0.06 : 0.18);
+  const urgent = riskPatterns.test(normalized);
   const reasons = [];
+
   if (confidence < 0.62) reasons.push('low classifier confidence');
   if (urgent) reasons.push('urgent or high-risk language');
   if (intent === 'human_support') reasons.push('request is better handled by a specialist');
-  return { intent: score ? intent : 'human_support', confidence, urgent, scores, reasons };
+
+  const result = {
+    intent,
+    confidence,
+    urgent,
+    scores,
+    reasons,
+    evidence: topMatches.slice(0, 3),
+    totalMatches: topMatches.length
+  };
+
+  analysisCache.set(cacheKey, result);
+  return result;
 }
 
 function renderResult(resultBox, data) {
   const escalate = data.reasons.length > 0;
-  resultBox.innerHTML = `<div class="result-top"><div><span class="eyebrow">ANALYSIS COMPLETE</span><h3>${LABELS[data.intent]}</h3></div><span class="decision ${escalate ? 'escalate' : 'handle'}">${escalate ? 'Escalate' : 'Auto-handle'}</span></div>
-    <div class="metrics"><div><span>Confidence</span><strong>${Math.round(data.confidence * 100)}%</strong></div><div><span>Risk check</span><strong>${escalate ? 'Review' : 'Passed'}</strong></div><div><span>Evidence</span><strong>3 matches</strong></div></div>
-    <div class="reply-block"><span class="eyebrow">SUGGESTED REPLY</span><p>${REPLIES[data.intent]}</p></div>
-    <div class="evidence"><span class="eyebrow">ROUTING REASON</span><p>${escalate ? data.reasons.join(' · ') : 'Confidence and risk checks passed. Historical response evidence supports this draft.'}</p></div>`;
+  const evidenceSummary = data.evidence.length ? `${data.evidence.length} matching cues` : 'No direct matches';
+  const routeText = escalate
+    ? data.reasons.join(' · ')
+    : 'Confidence and risk checks passed. Historical response evidence supports this draft.';
+
+  resultBox.innerHTML = `
+    <div class="result-top">
+      <div>
+        <span class="eyebrow">ANALYSIS COMPLETE</span>
+        <h3>${escapeHtml(LABELS[data.intent])}</h3>
+      </div>
+      <span class="decision ${escalate ? 'escalate' : 'handle'}">${escalate ? 'Escalate' : 'Auto-handle'}</span>
+    </div>
+    <div class="metrics">
+      <div><span>Confidence</span><strong>${Math.round(data.confidence * 100)}%</strong></div>
+      <div><span>Risk check</span><strong>${escalate ? 'Review' : 'Passed'}</strong></div>
+      <div><span>Evidence</span><strong>${escapeHtml(evidenceSummary)}</strong></div>
+    </div>
+    <div class="reply-block">
+      <span class="eyebrow">SUGGESTED REPLY</span>
+      <p>${escapeHtml(REPLIES[data.intent])}</p>
+    </div>
+    <div class="evidence">
+      <span class="eyebrow">ROUTING REASON</span>
+      <p>${escapeHtml(routeText)}</p>
+    </div>
+  `;
   resultBox.classList.add('show');
 }
 
@@ -59,7 +155,7 @@ function initApp() {
     return;
   }
 
-  analyzeBtn.addEventListener('click', () => {
+  const handleAnalysis = () => {
     const text = inputText.value.trim();
 
     if (!text) {
@@ -71,12 +167,21 @@ function initApp() {
 
     const data = analyzeTweet(text);
     renderResult(resultBox, data);
-  });
+  };
+
+  analyzeBtn.addEventListener('click', handleAnalysis);
 
   inputText.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' && event.ctrlKey) {
+    if ((event.key === 'Enter' && (event.ctrlKey || event.metaKey)) || (event.key === 'Enter' && !event.shiftKey && inputText.value.trim())) {
       event.preventDefault();
-      analyzeBtn.click();
+      handleAnalysis();
+    }
+  });
+
+  inputText.addEventListener('input', () => {
+    const text = inputText.value.trim();
+    if (!text) {
+      resultBox.classList.remove('show');
     }
   });
 
